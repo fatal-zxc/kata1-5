@@ -1,3 +1,5 @@
+// import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
 let button = document.querySelector('.switch');
 let wrapper = document.querySelector('.swiper');
 let text = document.querySelector('.switch__text');
@@ -18,7 +20,7 @@ button.addEventListener('click', function () {
 
 if (window.screen.width <= 320) {
   console.log(window.screen.width);
-  var swiper = new Swiper(".swiper", {
+  const swiper = new Swiper(".swiper", {
     slidesPerView: "auto",
     spaceBetween: 16,
     pagination: {
